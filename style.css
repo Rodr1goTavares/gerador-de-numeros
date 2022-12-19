@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(22, 24, 29);
+}
+
+
+h1 {
+    margin: 2% auto;
+    color: rgb(146, 146, 146);
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 10px 9px 10px black;
+}
+
+
+h2 {
+    color: silver;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+#page {
+    margin: 14% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    border: solid 5px rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px black;
+    gap: 0px;
+
+    width: 400px;
+    
+    
+    background-color: rgb(18, 20, 24);
+}
+
+
+
+#page-container {
+    margin: 15% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+    
+
+
+#number-input {
+
+    border: none;
+    padding: 15px;
+    width: 250px;
+    color: silver;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(18, 18, 19);
+    border-radius: 5px;
+    box-shadow: 4px 4px 9px black;
+}
+
+
+
+/*--------------------Window--------------------*/
+#window {
+    
+    margin: 5% auto;
+    padding: 15px;
+    
+    
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+    width: 200px;
+    height: 170px;
+
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 10px;
+    background-color: rgb(20, 20, 20);
+}
+
+
+/*--------------------Window Button--------------------*/
+#window-button {
+    border: none;
+    background-color: rgb(18, 18, 19);
+    border-radius: 5px;
+    color: silver;
+
+    width: 90px;
+    box-shadow: 4px 4px 9px black;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 800ms;
+}
+
+#window-button:hover {
+    
+    box-shadow: 0px 5px 70px rgb(0, 238, 255);
+    background-color: rgb(0, 238, 255);
+    color: black;
+
+    /* transform: translateZ(-30px);
+    transform: translateY(-2px);
+    box-shadow: 10px 10px 15px rgb(0, 0, 0); */
+}
+
+
+/*--------------------Close Window Button--------------------*/
+#close-window-button {
+    border: none;
+    background-color: rgb(18, 18, 19);
+    border-radius: 5px;
+    color: silver;
+
+    height: 3vh;
+    width: 8vh;
+    box-shadow: 4px 4px 9px black;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 900ms;
+}
+
+
+#result {
+    font-size: larger;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 238, 255);
+}
+
+
+
+
+#close-window-button:hover {
+    
+    box-shadow: 0px 5px 70px rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
+}
+
+
+/*Remove input number arrow*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button 
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
