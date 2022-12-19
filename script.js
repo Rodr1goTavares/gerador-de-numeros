@@ -1,9 +1,9 @@
 
-//Menu pop-up
+//NUmber result
 const button = document.getElementById('window-button')
 .addEventListener('click', (Enter) => {
 
-    /*--------------------Show menu--------------------*/
+    /*--------------------Show result--------------------*/
     const ShowWindow = document.getElementById('window');
     ShowWindow.style.display = 'flex';
     /*-------------------------------------------------*/
