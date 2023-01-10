@@ -9,7 +9,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: black;
+  background: linear-gradient(47deg,
+    rgb(0, 0, 0),
+    rgb(12, 8, 22),
+    rgb(0, 0, 0)
+  );
 }
 
 h1 {
@@ -41,36 +45,39 @@ h2 {
   content: "";
   position: absolute;
   z-index: -1;
-  height: calc(100% + 10px);
-  width: calc(100% + 10px);
+  height: calc(100% + 8px);
+  width: calc(100% + 8px);
   border-radius: 20px;
 
   background: linear-gradient(
-    45deg,
-    rgba(0, 217, 255, 0),
-    rgb(132, 0, 255),
-    rgb(0, 60, 255),
-    rgba(0, 217, 255, 0),
-    rgb(132, 0, 255),
-    rgb(0, 60, 255)
+    55deg,
+    rgba(0, 0, 0, 0),
+    rgb(47, 0, 255),
+    rgba(0, 0, 0, 0),
+    
+    rgba(0, 0, 0, 0),
+    rgb(47, 0, 255),
+    rgba(68, 68, 68, 0)
   );
 
-  animation: border-animation 10s linear infinite;
+  animation: border-animation 5s linear infinite;
   background-size: 300%;
   background-position: 300%;
+  
+  box-shadow: 0px 0px 1px rgba(49, 49, 49, 0.507);
 }
 
 #animated-border::after {
-  filter: blur(100px);
+  filter: blur(80px);
 }
 
 @keyframes border-animation {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 100%;
-  }
+    0% {
+		background-position: 0%;
+    }
+	100% {
+		background-position: 100%;
+	}
 }
 
 #page {
@@ -102,14 +109,16 @@ h2 {
 
 #number-input {
   border: none;
-  padding: 15px;
+  padding-inline: 15px;
   width: 250px;
+  height: 48px;
   color: silver;
   letter-spacing: 1px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: rgb(18, 18, 19);
   border-radius: 5px;
   box-shadow: 4px 4px 9px black;
+  outline: none;
 }
 
 /*--------------------Window--------------------*/
