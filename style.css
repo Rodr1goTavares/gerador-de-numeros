@@ -30,7 +30,7 @@ h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#animated-border {
+section{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,12 +45,13 @@ h2 {
   content: "";
   position: absolute;
   z-index: -1;
+
   height: calc(100% + 8px);
   width: calc(100% + 8px);
   border-radius: 20px;
 
-  background: linear-gradient(
-    55deg,
+  background: conic-gradient(
+
     rgba(0, 0, 0, 0),
     rgb(47, 0, 255),
     rgba(0, 0, 0, 0),
@@ -60,11 +61,11 @@ h2 {
     rgba(68, 68, 68, 0)
   );
 
-  animation: border-animation 5s linear infinite;
-  background-size: 300%;
   background-position: 300%;
-  
+  background-size: 300%;
+
   box-shadow: 0px 0px 1px rgba(49, 49, 49, 0.507);
+  animation: border-animation 5s linear infinite;
 }
 
 #animated-border::after {
@@ -72,11 +73,8 @@ h2 {
 }
 
 @keyframes border-animation {
-    0% {
-		background-position: 0%;
-    }
 	100% {
-		background-position: 100%;
+		transform: rotate(-360deg);
 	}
 }
 
