@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    "adpyke.codesnap",
+    "dzhavat.bracket-pair-toggler",
+    "lakshits11.dracula-redefined",
+    "miladfathy.dragan-color-theme",
+    "seyyedkhandon.firacode",
+    "tal7aouy.icons",
+    "alexandernanberg.horizon-theme-vscode",
+    "tomasvergara.vscode-fontawesome-gallery",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "akamud.vscode-javascript-snippet-pack",
+    "glenn2223.live-sass",
+    "ritwickdey.liveserver",
+    "chris-noring.node-snippets",
+    "miramac.vscode-exec-node",
+    "christian-kohler.npm-intellisense",
+    "omthemes.omthemes",
+    "whizkydee.material-palenight-theme",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "syler.sass-indented",
+    "burkeholland.simple-react-snippets",
+    "mccarter.start-git-bash",
+    "proxzima.sweetdracula",
+    "antiantisepticeye.vscode-color-picker"
+  ]
+}

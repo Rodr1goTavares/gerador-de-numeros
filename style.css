@@ -50,8 +50,8 @@ section{
   width: calc(100% + 8px);
   border-radius: 20px;
 
-  background: conic-gradient(
-
+  background: linear-gradient(
+    60deg,
     rgba(0, 0, 0, 0),
     rgb(47, 0, 255),
     rgba(0, 0, 0, 0),
@@ -73,8 +73,12 @@ section{
 }
 
 @keyframes border-animation {
-	100% {
-		transform: rotate(-360deg);
+	0%{
+        background-position: 0%;
+    }
+
+    100% {
+		background-position: 100%;
 	}
 }
 
