@@ -1,7 +1,7 @@
 
 //NUmber result
 const button = document.getElementById('window-button')
-.addEventListener('click', (Enter) => {
+.addEventListener('keypress', (Enter) => {
 
     /*--------------------Show result--------------------*/
     const ShowWindow = document.getElementById('window');
